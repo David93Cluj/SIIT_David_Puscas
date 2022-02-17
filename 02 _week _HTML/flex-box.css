@@ -31,7 +31,7 @@ header h1 {
 
 header nav ul {
     display:flex;
-    list list-style: none;
+    list-style: none;
 }
 
 header nav li {
@@ -46,21 +46,20 @@ header nav li a {
 
 footer {
     height: 50px;
-    footer {
-        text-align: center;
-        padding: 3px;
-        background-color: rgb(112, 66, 219);
-        color: white;
-      }
+    text-align: center;
+    padding: 3px;
+    background-color: rgb(112, 66, 219);
+    color: white;
 }
+
 main {
     flex-grow: 10;
 }
 
 
-{
+/* {
     box-sizing: border-box;
-}
+} */
 
 .container {
     display: flex;
@@ -80,10 +79,8 @@ main {
 }
 
 .articolul-1 {
-    div {
         text-align: justify;
-        text-justify: inter-word;
-    }       
+        text-justify: inter-word;    
 }
      
         
