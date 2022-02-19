@@ -14,28 +14,29 @@ body {
 }
 
 header {
-    height: 50px;
+    /* height: 50px; */
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-direction: column;
     background-color:rgb(112, 66, 219);
     color: white;
     align-items: center;
-    padding: 0px 20px;
+    padding: 10px 20px;
 }
 
 header h1 {
-    font-size: 22px;
+    font-size: 16px;
     font-weight: bold;
-    box-shadow: rgba(191, 151, 243, 0.2) 1.95px 1.95px 2.6px;
+    margin-bottom: 10px;
 }
 
 header nav ul {
     display:flex;
     list-style: none;
+    padding: 0;
 }
 
 header nav li {
-    display:flex;
     padding: 0 10px;
 }
 
@@ -44,12 +45,43 @@ header nav li a {
     text-decoration: none;
 }
 
+@media (min-width:400px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+header h1 {
+    margin-bottom: unset;
+}
+
 footer {
+    /* display: flex; */
+    justify-content: center;
+    flex-direction: column;
     height: 50px;
     text-align: center;
     padding: 3px;
-    background-color: rgb(112, 66, 219);
+    /* padding: 10px 20px; */
+    background-color:rgb(112, 66, 219);
     color: white;
+    align-items: center;
+}
+
+footer nav ul {
+    display:flex;
+    list-style: none;
+    padding: 0;
+}
+
+@media (min-width:600px) {
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
 main {
@@ -57,11 +89,11 @@ main {
 }
 
 
-/* {
+{
     box-sizing: border-box;
 } */
 
-.container {
+ .container {
     display: flex;
     flex-direction: row;
     justify-content: space-around; 
@@ -82,5 +114,3 @@ main {
         text-align: justify;
         text-justify: inter-word;    
 }
-     
-        
