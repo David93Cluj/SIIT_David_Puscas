@@ -5,10 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Piata Imobiliara</title>
+    <link rel="stylesheet" href="./butonul_meu.css">
 </head>
 <body>
-    
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     <h1>Ce se întâmplă acum în piața imobiliară și cum poți profita de asta? &#129297;</h1><br>
+    <div style="background-color:lightgrey;padding:30px 30px 2500px">
+
+<script>
+        var mybutton = document.getElementById("myBtn");
+        window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+    } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
 
 <p>
     Pentru că există un interes major pentru achiziționarea caselor/ apartamentelor. Tinerii își doresc un “loc al lor” și apelează la programul “Noua Casă” sau alte credite bancare avantajoase.<br>
