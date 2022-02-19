@@ -88,11 +88,6 @@ main {
     flex-grow: 10;
 }
 
-
-{
-    box-sizing: border-box;
-} */
-
  .container {
     display: flex;
     flex-direction: row;
